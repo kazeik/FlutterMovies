@@ -82,7 +82,7 @@ class _FullVideoPageState extends State<FullVideoPage> {
     ]);
     _initController();
     hideCover();
-    ForbidShotUtil.initForbid(context);
+    //ForbidShotUtil.initForbid(context);
     Screen.keepOn(true);
 
     controller.addListener(() {
@@ -126,7 +126,7 @@ class _FullVideoPageState extends State<FullVideoPage> {
     if (widget.controller == null) {
       controller.dispose();
     }
-    ForbidShotUtil.disposeForbid();
+    //ForbidShotUtil.disposeForbid();
     Screen.keepOn(false);
     if (Storage.getBool('autoCacheClean', defValue: false) == true) {
       ///退出播放界面自动清空播放缓存
